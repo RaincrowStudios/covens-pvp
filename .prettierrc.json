@@ -1,0 +1,5 @@
+{
+  "singleQuote": true,
+  "semi": false,
+  "max-line-length": { "options": { "limit": 120 } }
+}
