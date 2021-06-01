@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const api = require('./api/api')
 const uri = require('../keys/keys.json').mongodb
-require('./socketManager')
+// const { emitSocketEvent } = require('./socketManager')
 ;(async function start() {
   mongoose.set('useFindAndModify', false)
   mongoose.set('useCreateIndex', true)

@@ -1,4 +1,4 @@
-module.exports = (min, max) => {
+module.exports.getDamage = (min, max) => {
   return randomInteger(min, min * max)
 }
 

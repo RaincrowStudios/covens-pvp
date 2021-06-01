@@ -1,5 +1,11 @@
 const io = require('socket.io')(7000)
 
+const client = io.of('/client')
+
+module.exports.emitSocketEvent = (eventName, payload) => {
+  client.emit('game.event', eventName, payload)
+}
+
 module.exports.emitGameStarted = (room) => {
   io.emit('start', room)
 }
